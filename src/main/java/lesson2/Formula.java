@@ -1,5 +1,6 @@
 package lesson2;
 
+// Формула вычисления периметра прямоугольника
 public class Formula {
     public static void main(String[] args) {
         System.out.println("Периметр прямоугольника равен:");
