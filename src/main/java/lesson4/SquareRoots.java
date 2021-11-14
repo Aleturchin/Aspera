@@ -16,9 +16,8 @@ public class SquareRoots {
     Например 9 разделить на 3 равно 3 -соотвествует условию.
   */
         for (long i = 1; i <= f; i++) {
-            resalt = resalt / i;
-            if (resalt == i) {
-                break;
+            if (resalt/i == i) {
+                resalt = resalt / i;
             }
         }
         return resalt;
