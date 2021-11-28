@@ -9,4 +9,7 @@ public class Crow extends Animals {
         super.changeVoise(newVoice);
         System.out.println("Каркает ворона");
     }
+    public void sound () {
+        System.out.println("Ворона прокаркала кар-кар");
+    }
 }

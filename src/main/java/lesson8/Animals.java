@@ -18,4 +18,8 @@ public class Animals {
                 "voice='" + voice + '\'' +
                 '}';
     }
+// Метод sound будет использоваться вместо метода voice, указанного в задании
+    public void sound () {
+        System.out.println("Животные издают разные звуки");
+    }
 }

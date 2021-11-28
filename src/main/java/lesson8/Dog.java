@@ -10,5 +10,8 @@ public class Dog extends Animals {
         super.changeVoise(newVoice);
         System.out.println("Собака громко лает");
     }
+    public void sound () {
+        System.out.println("Собака сказала гав");
+    }
 
 }

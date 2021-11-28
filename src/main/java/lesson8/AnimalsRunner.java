@@ -27,6 +27,19 @@ public class AnimalsRunner {
         Animals [] animals = new Animals [] {dog, cat, rat, crow};
          for (Animals animals1 : animals) {
              System.out.println(animals1);
+         }
+        System.out.println("_______________");
+         cat.sound ();
+         dog.sound();
+         rat.sound();
+         crow.sound();
+         System.out.println("_______________");
+
+         Animals [] newAnimals = new Animals[] {dog, cat, rat, crow};
+         for (Animals newAnimals1 : newAnimals) {
+             newAnimals1.sound();
+         }
+
     }
-    }
+
 }

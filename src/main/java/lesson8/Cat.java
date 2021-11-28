@@ -9,5 +9,8 @@ public class Cat extends Animals {
         super.changeVoise(newVoice);
         System.out.println("Кашка мяукает");
     }
+    public void sound() {
+        System.out.println("Кошка сказала мяу");
+    }
 
 }

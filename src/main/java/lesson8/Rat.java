@@ -9,4 +9,7 @@ public class Rat extends Animals {
         super.changeVoise(newVoice);
         System.out.println("Крыса пищит");
     }
+    public void sound () {
+        System.out.println("Крыса сказала пи-пи-пи");
+    }
 }
