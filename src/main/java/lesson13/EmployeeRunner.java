@@ -18,22 +18,30 @@ public class EmployeeRunner {
         employees.add(new Employee("Федоров Н.Р", 7, 16));
         System.out.println(employees);
 
-        ListIterator iterator = employees.listIterator();
-        while (iterator.hasNext()) {
-            System.out.println(iterator.next());
-        }
-        System.out.println("_____________");
+        ListIterator<Employee> iterator = employees.listIterator();
+         while (iterator.hasNext()) {
+            Employee currentEmployee = iterator.next();
+           if (currentEmployee.getWorkAge() > 18) {
+                System.out.println(currentEmployee.getName());
+           }
+       }
+         System.out.println("______________");
 
         while (iterator.hasPrevious()) {
-            System.out.println(iterator.previous());
-                }
+            int currentEmployeeIndex = iterator.previousIndex();
+            iterator.previous();
+            if (currentEmployeeIndex % 2 != 0) {
+                iterator.remove();
+            }
+        }
+        System.out.println(employees);
 
-
-
+            }
 
         }
 
-    }
+
+
 
 
 
